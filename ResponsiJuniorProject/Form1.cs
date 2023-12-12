@@ -13,8 +13,7 @@ namespace ResponsiJuniorProject
 {
     public partial class Form1 : Form
     {
-        public static string connString = "Host=localhost;Username=postgres;Password=informatika;Database=azkadb";
-        readonly NpgsqlConnection conn = new NpgsqlConnection(connString);
+        readonly NpgsqlConnection conn = new NpgsqlConnection(GlobalVariable.connString);
         public Form1()
         {
             InitializeComponent();
